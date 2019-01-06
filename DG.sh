@@ -1,5 +1,5 @@
 #!/bin/sh
 hexo d -g
 git add --all
-git commit -m "Ferryvan"
+git commit -m "from Script"
 git push origin
