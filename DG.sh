@@ -1,3 +1,4 @@
+#!/bin/sh
 hexo d -g
 git add --all
 git commit -m "Ferryvan"
