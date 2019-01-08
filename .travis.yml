@@ -9,16 +9,9 @@ install:
 # - npm install -g gulp
 
 script: 
-- hexo g
+- hexo d -g
 
 after_script: 
-- cd ./public 
-- git init 
-- git config user.name “ferryvan” 
-- git config user.email “1156709213@qq.com” 
-- git add . 
-- git commit -m “Update docs with TRAVIS-CI.” 
-- git push --force --quiet "https://aa654290ea150df1cf0efca66520232cff5447a0@github.com/ferryvan/ferryvan.github.io.git" master:master
 
 branches: 
 only: 
