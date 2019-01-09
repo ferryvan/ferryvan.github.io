@@ -6,6 +6,14 @@ install:
 - cnpm install -g gulp
 - cnpm install
 
+branches: 
+only: 
+- blog 
+env: 
+global: 
+- GH_TOKEN: 12d75f023c0e23a4346740306b48e463720c1df1
+- GH_REF: github.com/ferryvan/ferryvan.github.io.git 
+
 # - npm install -g gulp
 
 script: 
@@ -21,10 +29,4 @@ after_script:
 - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
 
 
-branches: 
-only: 
-- blog 
-env: 
-global: 
-- GH_TOKEN: 12d75f023c0e23a4346740306b48e463720c1df1
-- GH_REF: github.com/ferryvan/ferryvan.github.io.git 
+
