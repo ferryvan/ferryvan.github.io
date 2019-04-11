@@ -6,13 +6,8 @@ install:
 - cnpm install -g gulp
 - cnpm install
 
-
-# - npm install -g gulp
-
 script: 
 - hexo g
-
-after_script: 
 - cd ./public 
 - git init 
 - git config user.name "ferryvan"
